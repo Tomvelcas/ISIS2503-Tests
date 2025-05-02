@@ -14,6 +14,6 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('admitir/', admitir_paciente, name='admitir_paciente'),
     path('disponibles/', obtener_camas_disponibles, name='camas_disponibles'),
-    path('health/', health_check, name='health_check'),
+    path('health-check/', health_check, name='health_check'),
     path('material-medico/', include('material_medico.urls')),
 ]
